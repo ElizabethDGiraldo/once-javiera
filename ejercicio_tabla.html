@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clasificación Torneo Videojuegos</title>
+    <style>
+        
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Tahoma, sans-serif;
+            box-shadow: 0 4px 8px rgba(124, 68, 68, 0.1);
+        }
+
+        
+        th, td {
+            border: 1px solid #ff00bf;
+            padding: 10px;
+            
+        }
+
+        thead {
+            background-color: #851c65;
+            color: white;
+        }
+
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #cfb4b4;
+        }
+
+        tfoot {
+            background-color: #ecf0f1;
+            font-weight: bold;
+        }
+
+        .main-title {
+            font-size: 1.5em;
+            text-transform:lowercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7" class="main-title">Clasificación Global - Torneo de karaoque 2030</th>
+            </tr>
+            <tr>
+                <th>Región</th>
+                <th>Equipo</th>
+                <th>M</th>
+                <th>Q</th>
+                <th>B</th>
+                <th>Puntos</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td rowspan="2"><strong>Norte</strong></td>
+                <td>club alitas</td>
+                <td>30</td>
+                <td>9</td>
+                <td>10</td>
+                <td>59</td>
+                <td>Clasificado</td>
+            </tr>
+            <tr>
+                <td>club leones</td>
+                <td>10</td>
+                <td>5</td>
+                <td>30</td>
+                <td>45</td>
+                <td>Eliminado</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2"><strong>Sur</strong></td>
+                <td>club mancuernas</td>
+                <td>10</td>
+                <td>8</td>
+                <td>2</td>
+                <td>20</td>
+                <td>Eliminado</td>
+            </tr>
+            <tr>
+                <td>club flor</td>
+                <td>10</td>
+                <td>6</td>
+                <td>4</td>
+                <td>20</td>
+                <td>Eliminado</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">Campeón Actual: <strong>club alitas</strong></td>
+                <td colspan="3">Total Participantes: 4 Equipos</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
