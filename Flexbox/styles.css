@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  min-height: 100vh;
+
+  /* Fondo de puntitos naranjas */
+  background-color: #fff8f3;
+  background-image: radial-gradient(circle, #f97316 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+
+  /* Flexbox 1 — centrado en pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+.contenedor {
+  background-color: white;
+  border-radius: 24px;
+  border: 2px solid #f97316;
+  padding: 30px 26px;
+  width: 100%;
+  max-width: 380px;
+
+  /* Flexbox 2 — columna principal */
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ================================
+   ENCABEZADO
+================================ */
+
+.encabezado {
+  /* Flexbox 3 — foto al lado del nombre */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+}
+
+.foto-perfil {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f97316;
+  flex-shrink: 0;
+}
+
+.nombre-bloque {
+  /* Flexbox 4 — nombre, tag y badge en columna */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nombre-bloque h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.tag {
+  font-size: 12px;
+  color: #f97316;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #fff3e8;
+  color: #c2410c;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid #f97316;
+  width: fit-content;
+}
+
+/* ================================
+   BIO
+================================ */
+
+.bio {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.7;
+  border-left: 3px solid #f97316;
+  padding-left: 12px;
+  border-radius: 0;
+}
+
+/* ================================
+   SEPARADOR
+================================ */
+
+.separador {
+  height: 1px;
+  background-color: #ffe8d6;
+}
+
+/* ================================
+   ESTADÍSTICAS
+================================ */
+
+.stats {
+  /* Flexbox 5 — stats en fila con divisores */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-item {
+  /* Flexbox 6 — número y etiqueta en columna */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  flex: 1;
+}
+
+.num {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f97316;
+}
+
+.lab {
+  font-size: 11px;
+  color: #999;
+}
+
+.divisor-vertical {
+  width: 1px;
+  height: 36px;
+  background-color: #ffe8d6;
+}
+
+/* ================================
+   BOTONES
+================================ */
+
+.botones {
+  /* Flexbox 7 — tres botones en fila */
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn-principal {
+  flex: 1;
+  padding: 11px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f97316;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-principal:hover {
+  background-color: #ea6c0a;
+}
+
+.btn-secundario {
+  flex: 1;
+  padding: 11px;
+  border: 1.5px solid #f97316;
+  border-radius: 12px;
+  background-color: white;
+  color: #f97316;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-secundario:hover {
+  background-color: #fff8f3;
+}
+
+.btn-icono {
+  width: 42px;
+  height: 42px;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  background-color: white;
+  color: #999;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.btn-icono:hover {
+  background-color: #f5f5f5;
+}
+
+/* ================================
+   GALERÍA
+================================ */
+
+.galeria-titulo {
+  font-size: 11px;
+  font-weight: bold;
+  color: #f97316;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.galeria {
+  /* Flexbox 8 — fotos en fila con salto de línea */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.galeria img {
+  width: calc(33.333% - 4px);
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #ffe8d6;
+}
+
+.galeria img:hover {
+  border-color: #f97316;
+}
